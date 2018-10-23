@@ -268,4 +268,22 @@ if __name__ == "__main__":
             print(v,"-stored hash")
             print(myRequest.hex,"-current hash")
  
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- - - - - --  - - - -  - -- -  - - - -
+#AWS Lambda
+#def lambda_handler(event, context):
+#    myRequest = Request(syslogger) #logger
+                
+#    for k,v in urls_hashes.items():
+#        print("-"*60)
+#        myRequest.request(url = k, headers={})
+#        w = myRequest.hex
+#        if v == w:
+#            print("Hashes are unchanged:",myRequest.hex)
+#        elif v == '':
+#            print("There is no stored hash")
+#            print(myRequest.hex, "-current hash")
+ #       else:
+ #           print(v,"-stored hash")
+ #           print(myRequest.hex,"-current hash")
+
 
