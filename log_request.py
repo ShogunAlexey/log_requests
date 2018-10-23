@@ -39,25 +39,12 @@ logger.addHandler(file_handler)
 logger.addHandler(stream_handler)
 
 # - - - - - - - - - - - - - - - - --  - - - - - - - - - - - - - - - - -- - - - - - - - - - - - -
+#TESTING URLS
 urls_hashes = {
-        'http://ivyaffiliates.com':'726a2a085e278dd1d6b1371393edf6f3',
-        'https://londoncityfinance.com':'2a92e902e3cbc1b03db10307465eeb0b',
-        'http://motorcyclefinancegroup.com':'726a2a085e278dd1d6b1371393edf6f3',
-        'https://paydayloans.quiddicompare.co.uk':'e5c3419ee669e61344b0f8fdb481eaa4',
-        'http://www.ivyaffiliates.co.uk':'726a2a085e278dd1d6b1371393edf6f3',
-        'http://www.whitezip.com':'3b732c71b926410c3729f2af1efe8b96',
-        'https://quiddicompare.co.uk':'988a1c8a73ae7fe13276128de6ad25e0',
+        'http://amazon.com':'726a2a085e278dd1d6b1371393edf6f3',
+        'https://bbc.co.uk':'2a92e902e3cbc1b03db10307465eeb0b',
+        'http://google.com':'726a2a085e278dd1d6b1371393edf6f3',
         'https://thisIsNotAnWebsite-ThisISJustATest.abc':'TESTING HASH',
-        'https://acceptloans.co.uk':'988a1c8a73ae7fe13276128de6ad25e0',
-        'http://alienpayday.co.uk':'661ced1361c159f8accce6f40e9969bd',
-        'http://amazedeal.co.uk':'3eadb9c1aa48dc3c7bc446a21c56de2d',
-        'http://billboa.co.uk':'661ced1361c159f8accce6f40e9969bd',
-        'https://cashcapital.co.uk':'f9ef2c66abdce9a82b48c8b7e2f6849a',
-        'https://creditextracash.co.uk':'9aab7fb2d42d078387257fea591af34b',
-        'http://creditextramoney.co.uk':'726a2a085e278dd1d6b1371393edf6f3',
-        'https://flexikash.co.uk':'661ced1361c159f8accce6f40e9969bd',
-        'http://flexikash.com':'661ced1361c159f8accce6f40e9969bd',
-        'https://flexyfinance.co.uk':'a02b25ae69c5ed37b53b18fcf5e86b09',
         'https://www.youtube.com/results?sp=CAISBAgBEAE%253D&search_query=music':'09a027e38ab8886ace3a1b49f9698def',
     }
 
@@ -281,10 +268,4 @@ if __name__ == "__main__":
             print(v,"-stored hash")
             print(myRequest.hex,"-current hash")
  
-#CHECK IF SESSION STATUS CODE IS EQUAL TO THE requests.get STATUS CODE
-        if k == "http://motorcyclefinancegroup.com" or k == "https://quiddicompare.co.uk" or k == "https://thisIsNotAnWebsite-ThisISJustATest.abc" or k == "http://billboa.co.uk" or k == "http://creditextramoney.co.uk":
-            pass
-        else:
-            r = requests.get(k) #, timeout=(1,3))
-            print("Requests.get():",r.status_code)
-            print("Requests.get() headers: ",r.headers)
+
